@@ -1,0 +1,24 @@
+#! /usr/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/system.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
+S_0x55dd9dc8ae20 .scope module, "onescount" "onescount" 2 1;
+ .timescale 0 0;
+    .port_info 0 /INPUT 10 "general_code_group";
+    .port_info 1 /INPUT 1 "rd_in";
+    .port_info 2 /OUTPUT 1 "rd_out";
+o0x7fc3b9645018 .functor BUFZ 10, C4<zzzzzzzzzz>; HiZ drive
+v0x55dd9dc8c350_0 .net "general_code_group", 9 0, o0x7fc3b9645018;  0 drivers
+o0x7fc3b9645048 .functor BUFZ 1, C4<z>; HiZ drive
+v0x55dd9dc8c7b0_0 .net "rd_in", 0 0, o0x7fc3b9645048;  0 drivers
+v0x55dd9dc8cba0_0 .var "rd_out", 0 0;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "onescount.v";
